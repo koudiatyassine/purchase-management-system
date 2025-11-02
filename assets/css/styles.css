@@ -1,0 +1,950 @@
+body {
+                    font-family: "Arial", sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    color: #000;
+                    background-color: #EAF8E7; /* Light background green */
+                    background-image: url("../assets/images/background.jpg"); /* Add your image */
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                /* Header */
+                header {
+                    background-color: #023336; /* Dark green */
+                    color: white;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+
+                #returnLoginBtn:hover {
+                    background-color: #0056b3;
+                }
+                  
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #C1E6BA; /* Soft pastel green */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #023336;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #4DA674; /* Lighter green */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #023336; /* Dark green */
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/*.....update_user..*/
+/* styles.css */
+
+    body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        background-color: #EAF8E7; /* Light background green */
+        background-image: url("../assets/images/background.jpg"); /* Add your image */
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+header {
+    background-color: #023336;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #C1E6BA;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #023336;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4DA674;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #023336;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999;
+}
+
+.modal-dialog {
+    position: relative;
+    margin: 10% auto;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #023336;
+    padding-bottom: 10px;
+}
+
+.modal-header h5 {
+    font-size: 24px;
+    color: #023336;
+}
+
+.close {
+    font-size: 30px;
+    color: #023336;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.modal-footer button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #4DA674;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #023336;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #023336;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #023336;
+    color: white;
+}
+/*-----update_produit---------*/
+
+/* General Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dimmed background */
+    z-index: 9999;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #f9f9f9;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #023336;
+    border-bottom: 2px solid #4DA674;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-success {
+    background-color: #4DA674;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #023336;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background-color: #023336;
+    color: white;
+}
+
+/* Close Button */
+.modal .close {
+    color: #333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal .close:hover {
+    color: #023336;
+}
+
+/* Center Align Content */
+.modal-content {
+    position: relative;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+    }
+}
+/*----------tableau invoice ----*/
+/* Style général pour le tableau */
+  .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            font-family: "Arial", sans-serif;
+            background-color: #f9f9f9;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+
+.table thead {
+    background-color: #4DA674;
+    color: white;
+}
+
+.table thead th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #e6f7f5; /* Surbrillance */
+}
+
+.table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+/* Style des boutons */
+.btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+.btn-sm {
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.btn-danger:focus,
+.btn-sm:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #e74c3c;
+}
+
+/* Bouton principal */
+button[type="submit"] {
+    background-color: #4DA674;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #023336;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+/*-------dash admin ---------*/
+/* Style global pour le container */
+.admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+}
+
+.dashboard-header h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Style de la section de menu */
+.dashboard-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    background-color: #4DA674;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: #023336;
+    transform: translateY(-2px); /* Effet de levée */
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .dashboard-header h2 {
+        font-size: 24px;
+    }
+
+    .admin-menu {
+        gap: 10px;
+    }
+
+    .menu-item {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+/*------login admin --------*/
+/* Style pour le container */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+.login-header h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Style pour le formulaire */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-form label {
+    font-size: 16px;
+    color: #555;
+}
+
+.login-form input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+    border-color: #4DA674;
+    box-shadow: 0px 0px 4px rgba(77, 166, 116, 0.5);
+}
+
+/* Style pour le bouton */
+.login-button {
+    background-color: #4DA674;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+    background-color: #023336;
+    transform: translateY(-2px); /* Effet de levée */
+}
+
+/* Style responsive */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-header h2 {
+        font-size: 20px;
+    }
+
+    .login-form input {
+        font-size: 13px;
+    }
+
+    .login-button {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Container for the page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f6f8;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #4DA674;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 14px;
+    }
+}
+/*----log out produit ---**/
+/* Container for the page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f6f8;
+    font-family: "Arial", sans-serif;
+}
+
+/* Header styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #4DA674;
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Responsiveness */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 14px;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #EAF8E7; /* Light background green */
+    background-image: url("../assets/images/background.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+header {
+    background-color: #023336; /* Dark green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #C1E6BA; /* Soft pastel green */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #023336;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.6;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    margin: 20px 0;
+    text-align: left;
+}
+
+form input, form select, form button {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4DA674; /* Lighter green */
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #023336; /* Dark green */
+    transform: translateY(-2px);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead {
+    background-color: #023336; /* Dark green */
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e9ffe5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+/*-
+CREATE TABLE cart (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    user_id INT(11) NOT NULL,
+    product_id INT(11) NOT NULL,
+    quantity INT(11) NOT NULL,
+    invoice_id INT(11) DEFAULT NULL,
+    PRIMARY KEY (id),
+    KEY user_id (user_id),
+    KEY product_id (product_id),
+    KEY invoice_id (invoice_id),
+    CONSTRAINT fk_cart_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_cart_product FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_cart_invoice FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE SET NULL ON UPDATE CASCADE
+);
+
+2 
+CREATE TABLE IF NOT EXISTS cart (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    invoice_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity INT DEFAULT 1,
+    FOREIGN KEY (invoice_id) REFERENCES invoices(id) ON DELETE CASCADE,
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
+);
+-*/
+/*-----msg err */
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #f8d7da;
+    color: #721c24;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #721c24;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #f5c6cb;
+    text-decoration: none;
+    cursor: pointer;
+}
+#returnLoginBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}  
+         
+
+/* Container for top buttons (Back and Logout) */
+.top-buttons-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Space between the back and logout buttons */
+    align-items: center; /* Vertically align the buttons */
+}
+
+/* Style for the back button */
+.btn-back, .btn-logout {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: "Arial", sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px; /* Ensure both buttons have the same width */
+}
+
+
+/* Style for the logout button hover effect */
+.btn-logout:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px); /* Hover effect */
+}
+
+/* Style for focus on the logout button */
+.btn-logout:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 2px #c0392b;
+}
+
+
